@@ -1,0 +1,28 @@
+
+for create user account
+
+post - http://localhost:8080/mail/Create
+
+body {
+  
+  "name": "John Doe",
+  "email": "Geeteshkumbalkar@gmail.com",
+  "password": "Geetesh@11"
+}
+
+
+response = otp sent onn your mail verify email and login
+
+***********************************************************************************************************
+for verify otp 
+GET - http://localhost:8080/mail/verifyOtp?otp=8504&email=geeteshroy111@gmail.com
+
+response  : your account verified
+
+
+***********************************************************************************************************
+for login 
+
+GET - http://localhost:8080/mail/login?email=geeteshroy111@gmail.com&password=Geetesh@11
+
+response  :ok
